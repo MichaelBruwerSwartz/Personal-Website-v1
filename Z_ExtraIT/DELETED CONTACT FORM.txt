@@ -1,0 +1,25 @@
+<div class="Contact-container">
+
+ <form action="https://formsubmit.co/michael.bruwer.swartz@gmail.com" method="POST">
+   <div class="Contact-Name">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+   </div>
+   
+   <div class="Contact-Email">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+   </div>
+
+   <div class="Contact-Message">
+     <label for="message">Message</label>
+     <input type="text" name="Contact-Message" required>
+   </div>
+
+   <input type="hidden" name="_next" value="results.html">
+  
+  <button class="reset"  type="reset">Reset</button>
+  <button class="submit" type="submit">Contact</button>
+ </form>
+
+</div>

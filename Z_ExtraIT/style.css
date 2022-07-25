@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(28,28,28,255);
+    color:rgb(255, 255, 255);
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+p.section-education{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+.heading{
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;  
+}
+    
+img.profile {
+width: 15%;
+height: 15%;
+float: left; 
+border-radius: 50%;   
+margin-right: 3%;   
+}
+
+a.ContactMe{
+    font-size: 500%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div.div-about{
+display: flex;  
+    Width: 50%;
+    Height: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid white;
+    border-width: 1px;
+    border-radius: 1%;
+    padding: 1%;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, .8);
+}  
+
+     img.School {
+Margin-top: 4%;    
+float: center;  
+height: 150px;
+border-radius: 75px; 
+     }
+
+
+.hero-image{
+   background-image: url(images/Coding-hero.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: solid white;
+   border-width: 1px;
+}
+
+h1{  
+Font-size: 380%;
+font-family: Fantasy ;
+Font-style: Oblique;
+color:White;
+margin-bottom: 1%;
+margin-top: 1%;
+margin-right: 2%;
+height: 7%;
+}
+
+p.section-about{
+margin-top: 2%;
+font-family: Arial, Helvetica, sans-serif;
+float: right;
+font-size: 100%;
+}
+
+p.section-experience{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+
+p.School{
+Font-Size: 150%;
+Font-Family: "Arial";
+margin-bottom: 4.5%;
+}
+
+p.Experience-Heading{
+    Font-Size: 200%;
+    Font-Family: "Arial"; 
+    margin-top: 0%;   
+}
+
+p.Experience-Paragraph{
+    Font-Size: 100%;
+    Font-Family: "Arial";    
+}
+
+hr{
+Margin-top: 6%;
+
+}
+
+ul{
+    Font-Size: 150%;
+    Font-Family: "Courier New";
+    margin-bottom: 4.5%;
+    list-style-type:dis; 
+}
+
+div.Contact-container{
+    border-top: solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+
+div.Contact-Name > input{
+    width: 150%;
+    height: 30px;
+    }
+
+div.Contact-Email > input{
+    width: 150%;
+    height: 30px;
+}    
+
+div.Contact-Message > input{
+    width: 150%;
+    height: 150px;
+}
+
+.button{
+    background-color: #4CAF50;
+}
+
+
+p.List{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+ul.experience{
+    Float: left;
+    Font-Size: 110%;
+    Font-Family: "Courier New";
+}
+
+ul.Enjoyment{
+    Font-Size: 150%;
+    Font-Family: "Arial";
+    margin-left: 10%;
+}
+
+
+nav.NavBar{
+Display: Flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+color: white;
+position : fixed;
+top :0;
+width : 100%;
+z-index : 10000;
+}
+
+.NavTitle{
+    font-size: 200%;
+    margin-left:2%;  
+    Font-Family: "Courier NEW";
+}
+
+.NavLinks ul{
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.NavLinks li{
+ list-style: none;   
+}
+
+.NavLinks li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem; 
+  Display: Block; 
+}
+
+.NavLinks li:hover{
+    background-color: rgb(103, 103, 103);
+}
+
+.toggle{
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 19px;
+}
+
+.toggle .bar{
+    Height: 3px;
+    Width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+@media (max-width : 1000px) {
+    .toggle{
+        display:flex;
+    }
+
+.NavLinks{
+    width: 100%;
+    display:none; 
+}
+
+.NavBar{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.NavLinks ul{
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.NavLinks li {
+    text-align: center;
+}
+
+.NavLinks li a{
+    padding: .5%;
+}
+
+.NavLinks.active{
+    display: Flex;
+}
+}
+
+
+*, *::after, *::before{
+box-sizing: border-box;
+}
+
+:root {
+
+--slider-padding: 5%;
+}
+
+.container {
+display: flex;
+justify-content: center;
+
+width: 100%;
+margin-bottom: 2%;
+}
+
+.slider{
+--slider-index: 0;
+
+display : flex;
+flex-grow: 1;
+margin: 0 1%;
+
+transform: translateX(Calc(var(--slider-index) * -50%));
+transition: transform 300ms ease-in-out;
+}
+
+.slider > img {
+    flex: 0 0 25%;
+    width : calc(100% - 2 * var(--slider-padding));
+ aspect-ratio: 16 / 9;
+ padding : .25%   
+}
+.slider > div {
+    flex: 0 0 25%;
+  width : 25%;
+ aspect-ratio: 16 / 9;
+ padding : .5%   ;
+border-radius: 10%;
+transition: transform 100ms ease-in-out;
+
+border: solid white;
+Font-Size: 100%;
+Font-Family: "Arial";
+text-align: center;
+margin-right: .25%;
+background-color: rgb(62, 65, 65);
+}
+
+.slider :hover{
+    transform: scale(1.03);
+}
+
+.handle {
+    border: none;
+    border-radius: 10%;
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 10;
+    margin: .5% 0;
+    padding: 0 .5%;
+    cursor: pointer;
+    color: white;
+    font-size: 750%;
+    align-items: flex;
+    justify-content: center;   
+    transition: transform 200ms ease-in-out;
+}
+
+.left-handle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.right-handle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.handle:hover, .handle:focus{
+    background-color: rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}
+
+
+.container:hover .left-handle::after{
+ content: \2039;
+ color: whitesmoke;
+}
+
+.container:hover .right-handle::after{
+ content: \203A;
+ color: whitesmoke;
+}
